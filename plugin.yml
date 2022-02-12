@@ -1,0 +1,10 @@
+name: BetterBosses
+main: cooldogedev\BetterBosses\BetterBosses
+author: cooldogedev
+version: 1.0.0
+api: 4.0.0
+
+permissions:
+  betterbosses.manage:
+    default: op
+    description: "Permission to open boss panel"

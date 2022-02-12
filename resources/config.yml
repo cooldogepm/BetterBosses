@@ -1,0 +1,185 @@
+---
+boss-respawn-time: 10 # in seconds, leave -1 to disable the respawn
+
+translations:
+  boss-spawn: "&aYou spawned a &f{boss} &aboss!"
+  boss-despawn: "&cYou despawned the &f{boss} &cboss!"
+
+  boss-spawn-broadcast: "§7[§dBosses§7] §r{player} spawned a {boss} boss at {x}:{y}:{z}!"
+  boss-kill-broadcast: "§7[§dBosses§7] §r{player} killed a {boss} boss!"
+
+  main-form:
+    title: "Bosses"
+    content: "Select an option:"
+    buttons:
+      - Spawn a Boss
+      - Despawn a Boss
+      - "&c&lExit"
+
+  despawn-form:
+    title: "Boss Despawn"
+    content: "Select a boss to despawn:"
+    buttons:
+      - text: "&2Zombie"
+        type: zombie
+      - text: "&7Skeleton"
+        type: skeleton
+      - text: "&cCreeper"
+        type: creeper
+      - text: "&5Enderman"
+        type: enderman
+      - text: "&0Spider"
+        type: spider
+      - text: "&8Iron Golem"
+        type: iron_golem
+      - text: "&bCustom"
+        type: custom
+      - text: "&c&lBack"
+
+  despawn-form-confirmation:
+    title: "Are you sure?"
+    content: "Are you sure you want to despawn the {boss} boss?"
+    yes: "&aYes"
+    no: "&cNo"
+
+  spawn-form:
+    title: "Boss Spawn"
+    content: "Select a boss to spawn:"
+    buttons:
+      - text: "&2Zombie"
+        type: zombie
+      - text: "&7Skeleton"
+        type: skeleton
+      - text: "&cCreeper"
+        type: creeper
+      - text: "&5Enderman"
+        type: enderman
+      - text: "&0Spider"
+        type: spider
+      - text: "&8Iron Golem"
+        type: iron_golem
+      - text: "&bCustom"
+        type: custom
+      - text: "&c&lBack"
+
+bosses:
+  creeper:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&aCreeper BOSS\n{health_bar}"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+
+  enderman:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&5Enderman BOSS\n{health_bar}"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+
+  skeleton:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&7Skeleton BOSS\n{health_bar}"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+
+  zombie:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&2Zombie BOSS\n{health_bar}"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+
+  spider:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&0Spider BOSS\n{health_bar}"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+
+  iron_golem:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&8Iron Golem BOSS\n{health_bar}"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+
+  custom:
+    movement-range: 50
+    attack-range: 1
+    speed: 0.34
+    scale: 1
+    max-health: 10
+    nametag: "&0Custom BOSS\n{health_bar}"
+    skin: "default"
+    spawn-position:
+      x: 0
+      y: 2
+      z: 0
+    drops:
+      - "276:0:1"
+      - "1:0:64"
+    commands:
+      - "say hello \"{player}\", you just got rewarded for killing a boss!"
+...
