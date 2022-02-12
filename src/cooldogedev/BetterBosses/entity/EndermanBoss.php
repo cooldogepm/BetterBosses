@@ -51,7 +51,7 @@ final class EndermanBoss extends Living implements BossEntity
     {
         if ($player !== null && $player->getPosition()->distance($this->getPosition()) <= $this->getTeleportRange() && $this->getTeleportationDelay() <= 0) {
             $this->teleport($player->getPosition());
-            $this->setTeleportationDelay(20 * 10);
+            $this->setTeleportationDelay(20 * 5);
         }
 
         if ($this->teleportationDelay > 0) {
