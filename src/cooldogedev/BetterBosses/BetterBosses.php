@@ -97,54 +97,6 @@ final class BetterBosses extends PluginBase
                 }
             }
         }
-
-//        $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void {
-//            foreach ($this->getServer()->getOnlinePlayers() as $onlinePlayer) {
-//                $facing = $onlinePlayer->getHorizontalFacing();
-//                $block = $onlinePlayer->getWorld()->getBlock($onlinePlayer->getLocation());
-//                $frontBlock = $onlinePlayer->getWorld()->getBlock($onlinePlayer->getLocation()->add(0, 0.5, 0)->getSide($facing));
-//                $secondFrontBlock = $onlinePlayer->getWorld()->getBlock($frontBlock->getPosition()->add(0, 1, 0));
-//
-//                $onlinePlayer->sendTip($frontBlock->getName() . ":" . $frontBlock->getId() . ":" . $frontBlock->getMeta() . "\n" . $secondFrontBlock->getName() . ":" . $secondFrontBlock->getId() . ":" . $secondFrontBlock->getMeta() . "\n" . $block->getName() . ":" . $block->getId() . ":" . $block->getMeta());
-//            }
-//        }), 1);
-
-//        $test = '
-//        <?php
-//
-//declare(strict_types=1);
-//
-//namespace cooldogedev\BetterBosses\entity;
-//
-//use pocketmine\entity\Entity;
-//use pocketmine\world\Position;
-//
-//interface BossEntity
-//{
-//__code__
-//}
-//';
-//
-//        $class = new BossEntityTrait();
-//        $spacing = str_repeat(" ", 4);
-//
-//        $code = "";
-//
-//        foreach ((new \ReflectionClass($class))->getMethods() as $method) {
-//
-//            $public = $method->isPublic() ? "public" : "protected";
-//            $returnType = $method->getReturnType()->getName();
-//
-//            if ($public === "protected") {
-//                continue;
-//            }
-//
-//            $code .= $spacing . "$public function " . $method->getName() . "(" . implode(", ", array_map(function (\ReflectionParameter $parameter): string {
-//                return '\\' . $parameter->getType()->getName() . " $" . $parameter->getName();
-//            }, $method->getParameters())) . "): \\$returnType;\n\n";
-//        }
-//
-//        var_dump(str_replace("__code__", $code, $test));
     }
 
     public function addBoss(Living $boss): bool
